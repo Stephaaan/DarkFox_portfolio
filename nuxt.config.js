@@ -28,6 +28,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/Element',
+    '~/plugins/i18n',
+    '~/plugins/VueCarousel'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -42,6 +45,13 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    [
+      'storyblok-nuxt',
+      {
+        accessToken: '7JkdjTHMPvUksO4Ai9xVTAtt',
+        cacheProvider: 'memory'
+      }
+    ]
   ],
   /*
   ** Axios module configuration

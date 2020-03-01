@@ -1,0 +1,14 @@
+{
+  "menu": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "languages": {
+    "en": "EN",
+    "sk": "SK"
+  },
+  "footer": {
+    "contact_us": "Contact us"
+  }
+}
