@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
     <div class="w-full flex flex-col justify-center items-center h-full">
       <div v-for="blok of bloks" :key="blok._uid">
         <component :is="blok.component" :blok="blok"/>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import ProjectsCarousel from '~/components/ProjectsCarousel.vue'
+  import TextBlock from '~/components/TextBlock.vue'
   import Heading from '~/components/Heading.vue'
 
   export default {
@@ -19,11 +19,11 @@
      }
    },
    components: {
-     ProjectsCarousel, Heading
+     TextBlock, Heading
    },
    mounted () {
     //console.log(this.$store.getters.getLanguage )
-    const link = this.$store.getters.selectLanguage === 'en' ? 'cdn/stories/home' : 'cdn/stories/sk/home'
+    const link = this.$store.getters.selectLanguage === 'en' ? 'cdn/stories/about' : 'cdn/stories/sk/about'
     this.$storyapi.get(link, {
       version: 'draft'
     }).then((res) => {

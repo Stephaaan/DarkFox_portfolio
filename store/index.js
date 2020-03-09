@@ -8,11 +8,12 @@ Vue.use(Vuex)
 export default () => new Vuex.Store({
   state: {
     settings: {
-      language: 'sk'
+      language: window.localStorage.getItem("lang") || 'sk'
     }
   },
   mutations: {
     setLanguage (state, language) {
+      window.localStorage.setItem("lang", language)
       state.settings.language = language
     }
   },

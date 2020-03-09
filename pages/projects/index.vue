@@ -23,7 +23,7 @@
    },
    mounted () {
     //console.log(this.$store.getters.getLanguage )
-    const link = this.$store.getters.selectLanguage === 'en' ? 'cdn/stories/home' : 'cdn/stories/sk/home'
+    const link = this.$store.getters.selectLanguage === 'en' ? 'cdn/stories/projects' : 'cdn/stories/sk/projects'
     this.$storyapi.get(link, {
       version: 'draft'
     }).then((res) => {

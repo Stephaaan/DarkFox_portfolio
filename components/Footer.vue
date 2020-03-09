@@ -4,4 +4,3 @@
         <p class="text-sm md:text-base">{{$t("footer.contact_us")}}: <a href="mailto:info@darkfoxsoftware.com">info@darkfoxsoftware.com</a></p>
     </div>
 </template>
-<!-- PROBLEM: footer is covering hamburger menu temp fix -->
