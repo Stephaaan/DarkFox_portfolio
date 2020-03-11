@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center bg-primaryBlack-100 font-worksans z-10 text-paperWhite font-light">
+  <div class="flex justify-between items-center bg-primaryBlack-200 font-worksans z-10 text-paperWhite font-light">
     <!-- LOGO -->
     <img src="~/assets/images/logo.svg" class="w-16 mx-6 my-2"/>
     <!--DESKTOP MENU SECTION -->
@@ -10,7 +10,7 @@
       <div class="">
         <div class="px-2 flex items-center">
           <p class="cursor-pointer text-dfOrange">{{$t(this.selectedLanguageObject.label)}}</p>
-          <div class="bg-primaryBlack-100 text-xl w-full">
+          <div class="bg-primaryBlack-200 text-xl w-full">
             <p v-for="item of this.notSelectedLanguagesObjects" :key="item.code" class="px-2 cursor-pointer" v-on:click="$store.dispatch('setLanguage', item.code)">{{$t(item.label)}}</p>
           </div>
         </div>
@@ -19,7 +19,7 @@
     </div>
     <div class="md:hidden hover-trigger">
       <img src="~/assets/images/hamburger.svg" alt="" class="w-20 px-4">
-      <div class="hidden absolute top-0 left-0 w-full pt-32 bg-primaryBlack-100 -z-1 text-3xl flex-col pb-4 pl-6"  id="hover-target">
+      <div class="hidden absolute top-0 left-0 w-full pt-32 bg-primaryBlack-200 -z-1 text-3xl flex-col pb-4 pl-6"  id="hover-target">
         <!--LINKS-->
         <div v-for="item of menuItems" :key="item.link">
           <nuxt-link class="cursor-pointer" :to="item.link">{{$t(item.text)}}</nuxt-link>
@@ -27,7 +27,7 @@
         <!--Languages-->
         <div class="flex items-center">
           <p class="cursor-pointer text-dfOrange">{{$t(this.selectedLanguageObject.label)}}</p>
-          <div class="bg-primaryBlack-100 text-xl w-full">
+          <div class="bg-primaryBlack-200 text-xl w-full">
             <p v-for="item of this.notSelectedLanguagesObjects" :key="item.code" class="px-2 cursor-pointer" v-on:click="$store.dispatch('setLanguage', item.code)">{{$t(item.label)}}</p>
           </div>
         </div>

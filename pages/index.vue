@@ -11,6 +11,7 @@
 <script>
   import ProjectsCarousel from '~/components/ProjectsCarousel.vue'
   import Heading from '~/components/Heading.vue'
+  import StringArray from '~/components/StringArray.vue'
 
   export default {
    data () {
@@ -19,7 +20,7 @@
      }
    },
    components: {
-     ProjectsCarousel, Heading
+     ProjectsCarousel, Heading, StringArray
    },
    mounted () {
     //console.log(this.$store.getters.getLanguage )

@@ -14,7 +14,7 @@ module.exports = {
 
       primaryBlack: {
         100: '#151515',
-        200: '#262626',
+        200: '#2d2d2d',
         300: '#2A363B',
       },
       paperWhite: '#F5F5F5',

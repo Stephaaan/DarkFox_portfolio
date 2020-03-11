@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-between h-screen">
     <Header />
-    <div class="h-full bg-linear flex items-center">
+    <div class="h-full bg-paperWhite flex items-center justify-center">
       <nuxt />
     </div>
     <Footer />
