@@ -1,6 +1,6 @@
 {
   "menu": {
-    "about": "About",
+    "about": "About us",
     "projects": "Projects",
     "contact": "Contact"
   },
@@ -10,5 +10,29 @@
   },
   "footer": {
     "contact_us": "Contact us"
+  },
+  "contact":{
+    "form":{
+      "name":"Your name",
+      "mail": "Your email",
+      "text": "Your text"
+    },
+    "errors":{
+      "name": {
+        "required": "Field name is required!"
+      },
+      "email": {
+        "required": "Field email is required!",
+        "format": "Field email has incorrect format!"
+      },
+      "text": {
+        "required": "Field text is required"
+      }
+    },
+    "common":{
+      "send": "Send",
+      "success": "Successfuly sent",
+      "error": "Ou, something went wrong"
+    }
   }
 }

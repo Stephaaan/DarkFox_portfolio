@@ -4,8 +4,12 @@ export default {
   /*
   ** Headers of the page
   */
+  pageTransition: 'page',
   head: {
     title: process.env.npm_package_name || '',
+    script: [
+      {src: 'https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js'}
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -13,6 +17,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+
     ]
   },
   /*
@@ -23,6 +28,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/style.css'
   ],
   /*
   ** Plugins to load before mounting the App

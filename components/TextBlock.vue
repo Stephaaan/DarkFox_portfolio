@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full font-worksans font-thin my-4" :style="color">
+  <div class="w-full font-worksans font-light my-4" :style="color">
     <div class="flex md:hidden w-full justify-center text-center" :style="MobileFont">
       <div v-html="html" class="h-auto"></div>
     </div>

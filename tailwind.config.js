@@ -14,13 +14,15 @@ module.exports = {
 
       primaryBlack: {
         100: '#151515',
-        200: '#2d2d2d',
+        200: '#0f0f0f',
         300: '#2A363B',
       },
       paperWhite: '#F5F5F5',
       dfOrange: '#CC5C0A',
       lightGray: '#EAEAEA',
       white: '#fff',
+      errorRed: '#A63232',
+      successGreen: '#4BB543'
     },
     spacing: {
       px: '1px',

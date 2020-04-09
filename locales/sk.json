@@ -10,5 +10,27 @@
   },
   "footer": {
     "contact_us": "Kontaktujte nás"
+  },
+  "contact":{
+    "form":{
+      "name":"Vase meno",
+      "mail": "Vas email",
+      "text": "Vas text"
+    },
+    "errors":{
+      "name": {
+        "required": "Meno je povinne!"
+      },
+      "email": {
+        "required": "Email je povinny!",
+        "format": "Email ma zly format!"
+      },
+      "text": {
+        "required": "Text je povinny!"
+      }
+    },
+    "common":{
+      "send":"Odoslat"
+    }
   }
 }

@@ -5,7 +5,7 @@
           <img :src="blok.ImagePreview" alt="" class="h-full">
         </div>
 
-        <div v-html="html" class="h-24 font-worksans text-paperWhite font-light text-center"/>
+        <div v-html="html" class="h-24 font-worksans text-primaryBlack-200 font-light text-center"/>
     </div>
 </template>
 <script>

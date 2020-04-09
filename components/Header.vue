@@ -1,7 +1,9 @@
 <template>
   <div class="flex justify-between items-center bg-primaryBlack-200 font-worksans z-10 text-paperWhite font-light">
     <!-- LOGO -->
-    <img src="~/assets/images/logo.svg" class="w-16 mx-6 my-2"/>
+    <nuxt-link to="/">
+      <img src="~/assets/images/logo.svg" class="w-16 mx-6 my-2"/>
+    </nuxt-link>
     <!--DESKTOP MENU SECTION -->
     <div class="hidden md:flex  text-3xl  mx-6">
       <div v-for="item of menuItems" :key="item.link">
@@ -47,10 +49,10 @@
             text: 'menu.about',
             link: '/about'
           },
-          {
+   /*       {
             text: 'menu.projects',
             link: '/projects'
-          },
+          }, */
           {
             text: 'menu.contact',
             link: '/contact'

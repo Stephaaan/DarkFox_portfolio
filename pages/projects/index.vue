@@ -1,4 +1,6 @@
 <template>
+<div></div>
+<!--
   <div>
     <div class="w-full flex flex-col justify-center items-center h-full">
       <div v-for="blok of bloks" :key="blok._uid">
@@ -6,6 +8,7 @@
       </div>
     </div>
   </div>
+  -->
 </template>
 
 <script>
